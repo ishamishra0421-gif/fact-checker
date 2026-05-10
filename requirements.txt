@@ -1,0 +1,6 @@
+streamlit
+pdfplumber
+tavily-python
+python-dotenv
+groq
+
