@@ -660,7 +660,7 @@ elif st.session_state.page == "Fact Check":
             status_txt.markdown(f'<div style="font-size:0.8rem;color:#64748b;padding:0.4rem 0;">🔎 Verifying <b style="color:#818cf8">{i+1}</b> of <b>{len(claims)}</b>: <span style="color:#94a3b8;font-style:italic;">{claim[:70]}...</span></div>', unsafe_allow_html=True)
             try:
                 result = verify_claim(claim)
-            except Exception:
+            except:
                 result = {"verdict":"NO_EVIDENCE","explanation":"Could not verify.","correct_fact":"","ai_reasoning":"Verification failed.","confidence":0,"sources":[]}
             results_list.append((claim, result))
             v = result.get("verdict","NO_EVIDENCE")
@@ -675,7 +675,7 @@ elif st.session_state.page == "Fact Check":
 
         try:
             ai_summary = generate_ai_summary(results_list, verified_count, inaccurate_count, false_count, noev_count, len(claims))
-        except Exception:
+        except:
             ai_summary = f"This document contains {len(claims)} factual claims. {verified_count} verified, {inaccurate_count} inaccurate, {false_count} false."
 
         trust_score = compute_trust(verified_count, inaccurate_count, false_count, noev_count, len(claims))
