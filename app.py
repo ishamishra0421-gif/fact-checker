@@ -883,7 +883,7 @@ if st.session_state.page == "Home":
             <div style="font-size:0.72rem;color:var(--text-3);margin-top:4px;">Built with AI + Live Web Verification</div>
         </div>
         <div class="footer-links">
-            <a class="footer-link" href="https://github.com" target="_blank">⬡ GitHub</a>
+            <a class="footer-link" href="https://github.com/ishamishra0421-gif/fact-checker" target="_blank">⬡ GitHub</a>
             <a class="footer-link" href="#" target="_blank">🚀 Deployed on Streamlit Cloud</a>
             <span class="footer-badge">v1.0.0</span>
         </div>
