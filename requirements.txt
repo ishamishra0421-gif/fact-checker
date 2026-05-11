@@ -3,4 +3,3 @@ pdfplumber
 tavily-python
 python-dotenv
 groq
-
