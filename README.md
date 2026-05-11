@@ -37,4 +37,4 @@ An AI-powered web app that automatically verifies claims in PDF documents by cro
 - README.md → Project documentation
 
 ## 👤 Author
-Isha Mishra — CogCulture PM Trainee Assessment 2026
+Isha Mishra 
