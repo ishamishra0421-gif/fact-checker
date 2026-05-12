@@ -771,7 +771,7 @@ if st.session_state.page == "Home":
     st.markdown("""
     <div class="hero">
         <div class="hero-tag"><div class="hero-dot"></div> AI-Powered Fact Verification</div>
-        <div class="hero-title">AI-Powered<br>Truth Verifivation<span class="accent"> for Documents</span></div>
+        <div class="hero-title">Turn Information<br>into<span class="accent"> Verified Insight</span></div>
         <p class="hero-sub">Upload any PDF — FactChecker AI extracts every factual claim, searches the live web, and returns a verdict with confidence scores and corrected facts in under 60 seconds.</p>
         <div class="hero-cta-row">
             <button class="cta-primary" onclick="window.location.href='?nav=upload'">📤 Upload PDF — It's Free</button>
