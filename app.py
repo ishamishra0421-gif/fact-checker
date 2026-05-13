@@ -89,7 +89,7 @@ html, body, .stApp {
     font-size: 15px;
 }
 
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu {visibility: hidden !important;} footer {visibility: hidden !important;} header {visibility: hidden !important;} [data-testid="stToolbar"] {display: none !important;} [data-testid="stDecoration"] {display: none !important;} [data-testid="stStatusWidget"] {display: none !important;} .reportview-container .main footer {visibility: hidden !important;}
 .stDeployButton { display: none; }
 
 .block-container {
