@@ -15,7 +15,17 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
-
+# Hide Streamlit branding
+st.markdown("""
+    <style>
+        [data-testid="stToolbar"] {display: none !important;}
+        [data-testid="stStatusWidget"] {display: none !important;}
+        [data-testid="stDecoration"] {display: none !important;}
+        #MainMenu {visibility: hidden !important;}
+        footer {visibility: hidden !important;}
+        header {visibility: hidden !important;}
+    </style>
+""", unsafe_allow_html=True)
 # ─── LOAD API KEYS ─────────────────────────────────────
 load_dotenv()
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
